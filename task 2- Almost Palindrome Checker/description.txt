@@ -1,0 +1,27 @@
+-----Description-----
+Write a Lean 4 method that implements an enhanced palindrome checker with the following features:
+
+1. Base Case - Pure Palindrome:
+   - Remove all non-alphanumeric characters from the input string
+   - Convert all remaining characters to lowercase
+   - Check if the resulting string reads the same forwards and backwards
+
+2. Almost Palindrome:
+   - If the string is not a pure palindrome, check if it can become a palindrome by removing exactly one character
+   - The removal can happen at any position in the string
+
+3. K-Palindrome:
+   - If neither of the above conditions are met, determine if the string can become a palindrome by removing at most K characters
+   - The function should take K as a parameter and return the minimum number of characters needed to remove (0 to K)
+   - If more than K characters would need to be removed, return -1
+
+-----Input-----
+The input consists of:
+- `s : String` - A string that may contain letters, digits, spaces, punctuation, and other symbols
+- `k : Nat` - The maximum number of characters that can be removed
+
+-----Output-----
+The output is an integer:
+- `0` if the string is already a palindrome after filtering non-alphanumeric characters and case normalization
+- `1` to `k` indicating the minimum number of characters that need to be removed to make the string a palindrome
+- `-1` if the string cannot be transformed into a palindrome by removing k or fewer characters

@@ -1,0 +1,32 @@
+[
+  {
+    "input": { "s": "A man, a plan, a canal: Panama", "k": 3 },
+    "expected": 0,
+    "unexpected": [1, 2, 3, -1]
+  },
+  {
+    "input": { "s": "race a car", "k": 3 },
+    "expected": 1,
+    "unexpected": [2]
+  },
+  {
+    "input": { "s": "abca", "k": 1 },
+    "expected": 1,
+    "unexpected": [0, 2, -1]
+  },
+  {
+    "input": { "s": "abc", "k": 1 },
+    "expected": -1,
+    "unexpected": [0, 1, 2]
+  },
+  {
+    "input": { "s": "abcde", "k": 2 },
+    "expected": -1,
+    "unexpected": [2,4]
+  },
+  {
+    "input": { "s": "abcdef", "k": 2 },
+    "expected": -1,
+    "unexpected": [0, 1, 2]
+  }
+]

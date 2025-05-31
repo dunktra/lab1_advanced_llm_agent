@@ -1,0 +1,11 @@
+{
+    "name": "mergeIntervals",
+    "parameters": [
+      {
+        "param_name": "intervals",
+        "param_type": "List (Int × Int)"
+      }
+    ],
+    "return_type": "List (Int × Int)"
+  }
+  

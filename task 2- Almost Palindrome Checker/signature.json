@@ -1,0 +1,14 @@
+{
+  "name": "almostPalindrome",
+  "parameters": [
+    {
+      "param_name": "s",
+      "param_type": "String"
+    },
+    {
+      "param_name": "k",
+      "param_type": "Nat"
+    }
+  ],
+  "return_type": "Int"
+}

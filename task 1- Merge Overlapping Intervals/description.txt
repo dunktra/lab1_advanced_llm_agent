@@ -1,0 +1,18 @@
+-----Description-----
+Write a Lean 4 method that takes a list of integer intervals and merges all overlapping intervals.
+Each interval is represented as a pair `(start, end)` with `start ≤ end`.  
+The method should return a new list of intervals such that:
+1. Intervals are sorted by their `start` value in ascending order.
+2. No two intervals overlap: for each adjacent pair `(s₁, e₁), (s₂, e₂)` in the result, we have `e₁ < s₂`.
+3. The union of the returned intervals equals the union of the input intervals.
+
+-----Input-----
+The input is a list of intervals:
+- `intervals : List (Int × Int)`  
+  where each element `(s, e)` satisfies `s ≤ e`.
+
+-----Output-----
+The output is a list of intervals `List (Int × Int)` satisfying:
+- Sorted by the first component: for all `i`, `fst (result[i]) ≤ fst (result[i+1])`.
+- Non-overlapping: for all `i`, `snd (result[i]) < fst (result[i+1])`.
+- Coverage: every integer `x` lies in some result interval iff it lay in some input interval.
